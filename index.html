@@ -124,12 +124,16 @@
       serwerze — zapisujemy jedynie wynik (hasła i podpowiedzi).</li>
     <li><strong>Konto</strong>: domyślnie konto jest <strong>anonimowe</strong> (losowy identyfikator, bez danych
       osobowych). Jeśli zdecydujesz się zapisać postępy, podajesz <strong>adres e-mail i hasło</strong>.</li>
-    <li><strong>Treści wygenerowane</strong>: tematy, hasła i podpowiedzi Twoich krzyżówek oraz stan
-      rozgrywek — abyś mógł do nich wracać i się uczyć.</li>
-    <li><strong>Dane o limitach</strong>: liczba generowań dziennie oraz przybliżony adres IP (do
-      ochrony przed nadużyciami i kosztami) — przetwarzane w minimalnym zakresie.</li>
-    <li><strong>Dane lokalne na urządzeniu</strong>: wybrany poziom, motyw, historia krzyżówek,
-      powtórki i statystyki — trzymane lokalnie (nie wysyłamy ich na serwer).</li>
+    <li><strong>Treści wygenerowane</strong>: tematy, hasła i podpowiedzi Twoich krzyżówek oraz
+      <strong>wybrany poziom nauczania</strong> (dopasowuje trudność) — zapisywane na serwerze,
+      abyś mógł do nich wracać i się uczyć.</li>
+    <li><strong>Dane o limitach</strong>: liczba generowań dziennie oraz adres IP (do ochrony
+      przed nadużyciami i kosztami). Usuwamy je po ok. 7 dniach.</li>
+    <li><strong>Dane anonimowej analityki</strong>: zdarzenia korzystania z aplikacji oraz raporty
+      awarii (bez treści notatek, bez danych osobowych) — powiązane z anonimowym identyfikatorem
+      konta (patrz §3, PostHog).</li>
+    <li><strong>Dane lokalne na urządzeniu</strong>: motyw, historia krzyżówek, postęp i stan
+      rozgrywek, powtórki i statystyki — trzymane lokalnie (nie wysyłamy ich na serwer).</li>
   </ul>
   <p><strong>Nie zbieramy</strong>: lokalizacji, kontaktów, identyfikatorów reklamowych. Nie wyświetlamy
   reklam. Nie sprzedajemy danych.</p>
@@ -139,6 +143,7 @@
     <li>Świadczenie usługi (generowanie i granie w krzyżówki) — wykonanie umowy.</li>
     <li>Ograniczanie darmowego użycia i ochrona przed nadużyciami — uzasadniony interes.</li>
     <li>Utrzymanie konta i postępów — Twoja zgoda / wykonanie umowy.</li>
+    <li>Analityka i stabilność aplikacji (anonimowe zdarzenia, raporty awarii) — uzasadniony interes.</li>
   </ul>
 
   <h2><span class="num">3</span>Odbiorcy danych (podmioty przetwarzające)</h2>
@@ -147,13 +152,17 @@
     <li><strong>OpenRouter</strong> oraz dostawca modelu AI (<strong>Google — Gemini</strong>) — do nich trafia
       Twoje zdjęcie w celu odczytania treści i zaproponowania haseł. Zdjęcie jest
       przesyłane w trakcie generowania; nie jest u nas trwale przechowywane.</li>
+    <li><strong>PostHog</strong> — anonimowa analityka produktowa i raporty awarii (region: UE).
+      Trafiają tam zdarzenia korzystania z aplikacji oraz anonimowy identyfikator konta —
+      bez danych osobowych i bez treści Twoich notatek.</li>
   </ul>
-  <p>Przekazywanie danych poza EOG może następować zgodnie z zasadami tych dostawców
+  <p>Supabase i PostHog przetwarzają dane w UE. Przekazanie zdjęcia do OpenRouter/Google
+  w celu wygenerowania haseł może następować poza EOG, zgodnie z zasadami tych dostawców
   (standardowe klauzule umowne).</p>
 
   <h2><span class="num">4</span>Jak długo przechowujemy dane</h2>
   <p>Dane konta i wygenerowane treści przechowujemy do czasu usunięcia konta.
-  Liczniki limitów są okresowo zerowane.</p>
+  Dane o limitach (w tym adres IP) usuwamy po ok. 7 dniach.</p>
 
   <h2><span class="num">5</span>Twoje prawa</h2>
   <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia oraz ograniczenia
