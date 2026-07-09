@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Polityka prywatności — Krzyżo</title>
+<meta name="description" content="Polityka prywatności aplikacji Krzyżo — jakie dane przetwarzamy i w jaki sposób.">
+<style>
+  :root {
+    --brand: #4F46E5;
+    --brand-soft: #EEF2FF;
+    --accent: #F97316;
+    --bg: #ffffff;
+    --surface: #f8f9fc;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --border: #e6e8ef;
+    --note-bg: #fff7ed;
+    --note-border: #fdba74;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #a5b4fc;
+      --brand-soft: #1e2536;
+      --accent: #fb923c;
+      --bg: #0f1220;
+      --surface: #161a2b;
+      --text: #e6e8f0;
+      --muted: #9aa3b5;
+      --border: #262c40;
+      --note-bg: #241a10;
+      --note-border: #7c4a18;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 22px 72px; }
+  header {
+    display: flex; align-items: center; gap: 14px;
+    padding-bottom: 20px; margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .logo {
+    width: 46px; height: 46px; border-radius: 12px; flex: none;
+    background: var(--brand);
+    display: grid; place-items: center;
+    color: #fff; font-weight: 800; font-size: 24px;
+    box-shadow: 0 3px 10px rgba(79,70,229,.28);
+  }
+  header h1 { font-size: 1.35rem; margin: 0; line-height: 1.2; }
+  header .sub { color: var(--muted); font-size: .9rem; margin-top: 2px; }
+  h2 {
+    font-size: 1.12rem; margin: 34px 0 10px;
+    padding-top: 6px;
+  }
+  h2 .num {
+    display: inline-grid; place-items: center;
+    width: 26px; height: 26px; margin-right: 8px;
+    border-radius: 8px; background: var(--brand-soft); color: var(--brand);
+    font-size: .82rem; font-weight: 700; vertical-align: middle;
+  }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 20px; }
+  li { margin: 8px 0; }
+  strong { color: var(--text); }
+  a { color: var(--brand); }
+  .meta {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 16px; margin: 20px 0 8px;
+    font-size: .93rem;
+  }
+  .meta div { margin: 3px 0; }
+  .meta .label { color: var(--muted); }
+  .note {
+    background: var(--note-bg); border: 1px solid var(--note-border);
+    border-radius: 12px; padding: 12px 16px; margin: 18px 0;
+    font-size: .9rem; color: var(--text);
+  }
+  .todo {
+    background: var(--brand-soft); color: var(--brand);
+    padding: 1px 7px; border-radius: 6px; font-weight: 600;
+    font-size: .88em; white-space: nowrap;
+  }
+  footer {
+    margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">K</div>
+    <div>
+      <h1>Polityka prywatności</h1>
+      <div class="sub">Aplikacja <strong>Krzyżo</strong></div>
+    </div>
+  </header>
+
+  <div class="meta">
+    <div><span class="label">Ostatnia aktualizacja:</span> 9 lipca 2026</div>
+    <div><span class="label">Administrator danych:</span> <span class="todo">[do uzupełnienia — imię i nazwisko / nazwa]</span></div>
+    <div><span class="label">Kontakt:</span> <a href="mailto:razork21@gmail.com">razork21@gmail.com</a></div>
+  </div>
+
+  <div class="note">
+    Wersja robocza — obowiązuje po uzupełnieniu danych administratora i weryfikacji prawnej przed publikacją w sklepie.
+  </div>
+
+  <p>Niniejszy dokument opisuje, jakie dane przetwarza aplikacja <strong>Krzyżo</strong>
+  („Aplikacja") i w jaki sposób. Aplikacja zamienia zdjęcia notatek w krzyżówki edukacyjne.</p>
+
+  <h2><span class="num">1</span>Jakie dane przetwarzamy</h2>
+  <ul>
+    <li><strong>Zdjęcia notatek</strong>, które robisz lub wybierasz z galerii — wyłącznie w celu
+      wygenerowania z nich haseł do krzyżówki. Zdjęcie jest wysyłane do przetwarzania
+      do dostawcy modelu AI (patrz §3). <strong>Nie przechowujemy samych zdjęć</strong> na naszym
+      serwerze — zapisujemy jedynie wynik (hasła i podpowiedzi).</li>
+    <li><strong>Konto</strong>: domyślnie konto jest <strong>anonimowe</strong> (losowy identyfikator, bez danych
+      osobowych). Jeśli zdecydujesz się zapisać postępy, podajesz <strong>adres e-mail i hasło</strong>.</li>
+    <li><strong>Treści wygenerowane</strong>: tematy, hasła i podpowiedzi Twoich krzyżówek oraz stan
+      rozgrywek — abyś mógł do nich wracać i się uczyć.</li>
+    <li><strong>Dane o limitach</strong>: liczba generowań dziennie oraz przybliżony adres IP (do
+      ochrony przed nadużyciami i kosztami) — przetwarzane w minimalnym zakresie.</li>
+    <li><strong>Dane lokalne na urządzeniu</strong>: wybrany poziom, motyw, historia krzyżówek,
+      powtórki i statystyki — trzymane lokalnie (nie wysyłamy ich na serwer).</li>
+  </ul>
+  <p><strong>Nie zbieramy</strong>: lokalizacji, kontaktów, identyfikatorów reklamowych. Nie wyświetlamy
+  reklam. Nie sprzedajemy danych.</p>
+
+  <h2><span class="num">2</span>W jakim celu i na jakiej podstawie</h2>
+  <ul>
+    <li>Świadczenie usługi (generowanie i granie w krzyżówki) — wykonanie umowy.</li>
+    <li>Ograniczanie darmowego użycia i ochrona przed nadużyciami — uzasadniony interes.</li>
+    <li>Utrzymanie konta i postępów — Twoja zgoda / wykonanie umowy.</li>
+  </ul>
+
+  <h2><span class="num">3</span>Odbiorcy danych (podmioty przetwarzające)</h2>
+  <ul>
+    <li><strong>Supabase</strong> — hosting bazy danych i funkcji serwerowych (region: UE/Frankfurt).</li>
+    <li><strong>OpenRouter</strong> oraz dostawca modelu AI (<strong>Google — Gemini</strong>) — do nich trafia
+      Twoje zdjęcie w celu odczytania treści i zaproponowania haseł. Zdjęcie jest
+      przesyłane w trakcie generowania; nie jest u nas trwale przechowywane.</li>
+  </ul>
+  <p>Przekazywanie danych poza EOG może następować zgodnie z zasadami tych dostawców
+  (standardowe klauzule umowne).</p>
+
+  <h2><span class="num">4</span>Jak długo przechowujemy dane</h2>
+  <p>Dane konta i wygenerowane treści przechowujemy do czasu usunięcia konta.
+  Liczniki limitów są okresowo zerowane.</p>
+
+  <h2><span class="num">5</span>Twoje prawa</h2>
+  <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia oraz ograniczenia
+  przetwarzania. <strong>Usunięcie konta i wszystkich danych</strong> jest dostępne bezpośrednio
+  w Aplikacji: <em>Profil → Usuń konto i dane</em> (usuwa konto oraz wszystkie krzyżówki,
+  powtórki i statystyki, z serwera i z urządzenia — operacja nieodwracalna).
+  W sprawach dotyczących prywatności pisz na: <a href="mailto:razork21@gmail.com">razork21@gmail.com</a>.</p>
+
+  <h2><span class="num">6</span>Dzieci</h2>
+  <p>Aplikacja jest przeznaczona do nauki i może być używana przez uczniów, w tym
+  dzieci. W przypadku młodszych dzieci konto powinien założyć i nadzorować rodzic
+  lub opiekun. Domyślnie konto jest anonimowe i zbieramy tylko dane niezbędne do
+  działania usługi. Jeśli uważasz, że dziecko przekazało nam dane bez zgody
+  opiekuna, napisz na <a href="mailto:razork21@gmail.com">razork21@gmail.com</a>, a usuniemy je.</p>
+
+  <h2><span class="num">7</span>Zmiany</h2>
+  <p>Możemy aktualizować tę politykę. Istotne zmiany zakomunikujemy w Aplikacji lub
+  pod adresem, gdzie hostowana jest ta strona.</p>
+
+  <footer>
+    © 2026 Krzyżo · Polityka prywatności · kontakt: <a href="mailto:razork21@gmail.com">razork21@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
