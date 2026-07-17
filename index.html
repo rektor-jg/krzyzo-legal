@@ -105,7 +105,7 @@
   </header>
 
   <div class="meta">
-    <div><span class="label">Ostatnia aktualizacja:</span> 9 lipca 2026</div>
+    <div><span class="label">Ostatnia aktualizacja:</span> 17 lipca 2026</div>
     <div><span class="label">Kontakt:</span> <a href="mailto:sowka.pomoc@gmail.com">sowka.pomoc@gmail.com</a></div>
   </div>
 
@@ -152,12 +152,16 @@
     <li><strong>OpenRouter</strong> oraz dostawca modelu AI (<strong>Google — Gemini</strong>) — do nich trafia
       Twoje zdjęcie w celu odczytania treści i zaproponowania haseł. Zdjęcie jest
       przesyłane w trakcie generowania; nie jest u nas trwale przechowywane.</li>
-    <li><strong>PostHog</strong> — anonimowa analityka produktowa i raporty awarii (region: USA).
+    <li><strong>PostHog</strong> — anonimowa analityka produktowa i raporty awarii (region: UE).
       Trafiają tam zdarzenia korzystania z aplikacji oraz anonimowy identyfikator konta —
       bez danych osobowych i bez treści Twoich notatek.</li>
+    <li><strong>RevenueCat</strong> — obsługa subskrypcji Premium (status zakupu powiązany
+      z anonimowym identyfikatorem konta). Płatność realizuje <strong>Google Play / App
+      Store</strong> — my nie otrzymujemy danych karty. RevenueCat może przetwarzać dane
+      poza EOG (m.in. USA), na podstawie standardowych klauzul umownych.</li>
   </ul>
-  <p>Supabase przetwarza dane w UE. Dane analityczne (PostHog) oraz zdjęcie przekazywane
-  do OpenRouter/Google w celu wygenerowania haseł mogą być przetwarzane poza EOG
+  <p>Supabase i PostHog przetwarzają dane w UE. Zdjęcie przekazywane do
+  OpenRouter/Google w celu wygenerowania haseł może być przetwarzane poza EOG
   (m.in. w USA), na podstawie standardowych klauzul umownych.</p>
 
   <h2><span class="num">4</span>Jak długo przechowujemy dane</h2>
